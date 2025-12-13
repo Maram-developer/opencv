@@ -1,36 +1,29 @@
-# Eye Movement Detection using OpenCV
+# Face Detection using MediaPipe
 
-This project implements a real-time eye movement detection system using computer vision techniques. 
-It processes a pre-recorded video to detect eye regions and visualize their movement.
-
-## Project Overview
-The system analyzes video frames to localize the eye region using contour detection and provides visual feedback in real time. 
-It demonstrates how OpenCV can be applied to practical problems such as driver drowsiness detection.
+This project implements a real-time face detection system using MediaPipe and OpenCV.
+It detects faces from the webcam, draws bounding boxes, and displays the total number of detected faces.
 
 ## Pipeline
-1. Convert video frames to grayscale.
-2. Apply Gaussian blur to reduce noise.
-3. Apply binary thresholding to isolate the eye region.
-4. Detect contours and sort them by area.
-5. Visualize detected contours with bounding boxes and center lines.
+- Capture video from webcam
+- Convert frames to RGB
+- Use MediaPipe FaceDetection model
+- Draw bounding boxes on detected faces
+- Display the number of faces on the frame
 
 ## Features
-- Eye region localization using contours
-- Real-time visualization
-- Output video saving for later analysis
-- Simple and easy-to-extend pipeline for research or prototyping
-
-## Input
-- Pre-recorded video containing eye movement (`input_video.mp4`)
-
-## Output
-- Processed video with detected eye contours (`output_video.mp4`)
+- Real-time face detection
+- Bounding box visualization
+- Face count display
 
 ## Technologies Used
-- Python 3.x
+- Python
 - OpenCV
+- MediaPipe
 
-## Potential Applications
-- Driver drowsiness detection systems
-- Eye-tracking studies
-- Human-computer interaction research
+## Input
+- Webcam video stream
+
+## Output
+- Live video feed with detected faces outlined by bounding boxes
+- Face landmarks drawn on each detected face
+- Number of faces displayed on the top-left corner 
