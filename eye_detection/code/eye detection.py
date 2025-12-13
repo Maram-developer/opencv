@@ -1,5 +1,5 @@
 import cv2
-cap = cv2.VideoCapture("D:/NU comptetion/computer vision/eye.mp4")
+cap = cv2.VideoCapture("D:/computer vision/eye.mp4")
 
 while True:
     ret,frame=cap.read()
