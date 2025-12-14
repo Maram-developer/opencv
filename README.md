@@ -1,4 +1,12 @@
 # opencv
+✨Object Detection using OpenCV (Inference)
+
+Description:
+A real-time object detection system using OpenCV and a pre-trained SSD MobileNet v3 model. The system detects multiple objects from a webcam feed and draws bounding boxes with class labels.
+
+Key Concepts:
+Object Detection, DNN, Real-time Video Processing, Computer Vision
+
 ✨Hand Tracking Mini Game (Catch the Enemy)
 
 Description:
